@@ -21,12 +21,12 @@ export const Education = () => {
             Bachelor of Arts in Computer Science
           </h3>
           <p className="text-md text-gray-600">
-            University of Colorado Boulder - 2022-2026
+            University of Colorado Boulder - 2024-2026
           </p>
           <ul className="list-disc pl-5 text-gray-700">
             <li>
-              Applying knowledge of Data Structures and Algorithms to create
-              efficient code
+              Currently seeking opportunities to get hands on experience through
+              student led groups
             </li>
           </ul>
         </div>
@@ -39,14 +39,19 @@ export const Education = () => {
           </p>
           <ul className="list-disc pl-5 text-gray-700">
             <li>
-              Led an Agile developing an application that analyzed occupation
-              data in Canada
+              Led an Agile team to develop an application that analyzed
+              occupation data in Canada
             </li>
             <li>
               Gained comprehensive knowledge of the C language and implemented
               basic data structures and algorithms
             </li>
             <li>Member of the Google Student Developers Club</li>
+            <li>
+              Excelled in various mathematics courses such as Discrete
+              Structures, Linear Algebra, and Calculus 2
+            </li>
+            <li>Thrived in courses such as micro and macro economics</li>
           </ul>
         </div>
       </div>

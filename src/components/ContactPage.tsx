@@ -1,6 +1,8 @@
 import { Input } from "./Input";
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { db } from "../config/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 type SubmissionType = {
   name: string;
@@ -13,21 +15,26 @@ export const ContactPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    setError(false);
     const submission: SubmissionType = {
       name: name,
       email: email,
       message: message,
     };
 
-    console.log(submission);
-
-    setSubmitted(true);
+    try {
+      await addDoc(collection(db, "messages"), submission);
+      setSubmitted(true);
+    } catch (e) {
+      setError(true);
+      console.log(e);
+    }
 
     setName("");
     setEmail("");
@@ -70,6 +77,7 @@ export const ContactPage = () => {
                 value={email}
                 placeholder="Email..."
                 required
+                type="email"
               />
             </div>
             <div>
@@ -84,7 +92,12 @@ export const ContactPage = () => {
                 required
               ></textarea>
             </div>
-            <h3>{submitted ? "Message sent!" : ""}</h3>
+            <h3 className="text-green-500">
+              {submitted ? "Message sent!" : ""}
+            </h3>
+            <h3 className="text-red-500">
+              {error ? "Something went wrong" : ""}
+            </h3>
             <button
               type="submit"
               className="rounded-full bg-blue-600 w-40 p-3 text-white hover:bg-blue-500 text-center font-light"

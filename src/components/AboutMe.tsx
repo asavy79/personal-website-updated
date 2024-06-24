@@ -1,7 +1,7 @@
 export const AboutMe = () => {
   return (
     <div
-      className="flex justify-center items-center space-x-10 mt-20 mx-auto max-w-4xl p-10 md:flex-row flex-col mb-10"
+      className="flex justify-center items-center space-x-10 mt-20 mx-auto max-w-4xl p-10 sm:flex-row flex-col mb-10"
       id="about"
     >
       <div>

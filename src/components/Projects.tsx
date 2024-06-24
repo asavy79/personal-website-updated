@@ -9,27 +9,27 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Stock Graph Analysis",
+    title: "Interactive Stock Data Viewer",
     description:
-      "A simple interface built using TaiPy allowing users to view data on a certain stock during a given period of time.",
+      "This project features a user-friendly interface built with TaiPy, designed to provide users with the ability to explore and visualize stock market data. I utilized the Yahoo Finance module to fetch real-time and historical data for a specific stock over a user-selected time period.",
     imageName: "taipy.png",
   },
   {
     title: "Personal Portfolio",
     description:
-      "Using React and Tailwind, designed and implemented a personal website showcasing projects and professional skills.",
+      "Using React and Tailwind CSS, I implemented my own personal website, hosted on an AWS EC2 instance. It provides a clean and concise portfolio of my skills, experience, and projects.",
     imageName: "personalsite.png",
   },
   {
     title: "Canada Labor Data Project",
     description:
-      "Analyzed and visualized Canada labor market data using Python to extract meaningful patterns and trends.",
+      "I analyzed an extensive dataset containing over 2 million records of Canadian labor market data to explore the relationship between experience levels and their effects on average wages and job vacancies across Canada. Using Python, specifically the NumPy and Matplotlib libraries, I performed a statistical analysis to uncover trends and patterns. The results are displayed through clear and intuitive visualizations to effectively illustrate the findings.",
     imageName: "swdp.png",
   },
   {
     title: "Moving Average Cross Analysis",
     description:
-      "Used Python, Pandas, NumPy, and the Yahoo Finance API to analyze average percentage increases in stocks after certain moving average crosses.",
+      "Using the Yahoo Finance module, Pandas, and NumPy libraries, I implemented a tool allowing users to search for specific simple moving average crosses of various stocks throughout the S&P 500. Users are able to see historical stock performance after specific crosses, such as the 50 day crossing the 200, allowing them to make informed investment decisions.",
     imageName: "movingaverages.png",
   },
 ];
