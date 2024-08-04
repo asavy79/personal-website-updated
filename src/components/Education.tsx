@@ -39,8 +39,9 @@ export const Education = () => {
           </p>
           <ul className="list-disc pl-5 text-gray-700">
             <li>
-              Led an Agile team to develop an application that analyzed
-              occupation data in Canada
+              Directed an Agile team in the development of an application that
+              interprets and visualizes occupation data across Canada, enhancing
+              strategic decision-making
             </li>
             <li>
               Gained comprehensive knowledge of the C language and implemented
@@ -49,9 +50,9 @@ export const Education = () => {
             <li>Member of the Google Student Developers Club</li>
             <li>
               Excelled in various mathematics courses such as Discrete
-              Structures, Linear Algebra, and Calculus 2
+              Structures, Statistics, Linear Algebra, and Calculus 2
             </li>
-            <li>Thrived in courses such as micro and macro economics</li>
+            <li>Thrived in courses such as Micro and Macro Economics</li>
           </ul>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export const Hello = () => {
   return (
     <div className="mt-20">
-      <div className="font-bold text-9xl text-center mt-10 gradient-text">
+      <div className="hidden md:block font-bold text-9xl text-center mt-10 gradient-text">
         Hi I'm Alex
       </div>
       <div>

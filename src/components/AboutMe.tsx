@@ -21,7 +21,7 @@ export const AboutMe = () => {
           skills that enhance my software engineering capabilities.
         </p>
         <a
-          href="#skills"
+          href="#education"
           className="rounded-full bg-blue-600 w-40 p-3 text-white hover:bg-blue-500 text-center cursor-pointer"
         >
           Learn More

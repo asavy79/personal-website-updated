@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJsSquare,
@@ -15,7 +14,7 @@ export const Skills = () => {
   return (
     <div
       className={
-        "flex flex-col items-center w-full py-10 mt-20 " +
+        "flex flex-col items-center w-full py-10 mt-10 " +
         `transition-opacity duration-500 ${inView ? "fade-in" : "fade-out"}`
       }
       id="skills"

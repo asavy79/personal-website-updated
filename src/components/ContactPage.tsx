@@ -50,10 +50,10 @@ export const ContactPage = () => {
       }
       ref={ref}
     >
-      <h3 className="p-3 text-5xl font-light text-blue-800 mt-20">
+      <h3 className="p-3 text-2xl md:text-5xl font-light text-blue-800 mt-20">
         Contact Me
       </h3>
-      <div className="flex flex-row space-x-10 mt-10">
+      <div className="flex flex-row mt-10">
         <div>
           <form
             action="submit"
